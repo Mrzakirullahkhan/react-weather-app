@@ -1,0 +1,151 @@
+
+
+.main-box{
+    /* background-color: #8aaae5; */
+    min-width: 25%;
+    /* height: 75vh; */
+    border: 2px solid transparent;
+    border-radius: 8px;
+    /* border-radius: 30px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+
+}
+.inputValue{
+    border: none;
+    width: auto;
+    height: 6.5vh;
+    border: none;
+    outline: none;
+    display: flex;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.1);
+    
+    
+}
+.inputValue:focus{
+    color: rgb(85, 82, 82);
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+    /* margin-left: 3px; */
+}
+.temp-country{
+    /* background-color: yellow; */
+    margin-top: 10%;
+    width: 100%;
+    padding-left: 20px;
+
+
+}
+.tempValue{
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 50px;
+    
+}
+.condition{
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+.sticker-condtion{
+    display: flex;
+    margin-top: 20px;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: orange; */
+
+      
+}
+.boxes{
+    /* background-color: pink; */
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 5px 0px;
+    color: white;
+    
+}
+.box{
+    width: 30%;
+    /* background-color: lightgreen; */
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 15px 0px 15px 0px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    
+}
+.box:hover {
+    transform: scale(1.1); /* Move the element 50 pixels to the right */
+  }
+
+.fa-temperature-high{
+    font-size: 50px;
+}
+.fa-wind{
+    font-size: 50px;
+}
+.fa-cloud-sun{
+    font-size: 50px;
+}
+.Humidityname{
+    
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.Windname{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.pressurename{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.pressure{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.Wind{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.Humidity{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* vedio  */
+.main-box {
+    position: relative; /* Main container ko relative position den */
+    z-index: 0; /* Z-index set karen taaki text aur content video ke upar ho */
+  }
+  
+  #background-video {
+    position: absolute; /* Video ko absolute position den */
+    top: 0;
+    left: 0;
+    width: 100%; /* Video width ko 100% set karen */
+    height: 100%; /* Video height ko 100% set karen */
+    border-radius: 8px;
+    object-fit: cover; /* Video ko container ke saath adjust karne ke liye */
+    z-index: -1; /* Video ko main container ke peeche rakhne ke liye z-index ko negative value den */
+  }
+  
